@@ -1,0 +1,26 @@
+{
+  "name": "candybag-backend",
+  "version": "1.0.0",
+  "description": "Backend API for newsletter subscription and bulk email sending",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js"
+  },
+  "keywords": ["newsletter", "sendgrid", "google-sheets"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "googleapis": "^126.0.1",
+    "@sendgrid/mail": "^7.7.0",
+    "helmet": "^7.1.0",
+    "express-rate-limit": "^7.1.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
