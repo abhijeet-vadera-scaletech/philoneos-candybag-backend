@@ -16,10 +16,10 @@ validateConfig();
 // Security middleware
 app.use(helmet());
 
-// CORS configuration
+// CORS configuration - Allow all origins
 app.use(cors({
   origin: config.cors.origin,
-  credentials: true,
+  credentials: config.cors.credentials,
 }));
 
 // Body parser

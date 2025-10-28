@@ -19,7 +19,8 @@ export const config = {
   },
 
   cors: {
-    origin: process.env.FRONTEND_URL || "https://philoneos-candybag.vercel.app",
+    origin: "*", // Allow all origins
+    credentials: false,
   },
 };
 
